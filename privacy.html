@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Privacy Policy | Jalwa Game - Secure Gaming Platform</title>
+  <meta name="description" content="Read Jalwa Game's privacy policy. Learn how we protect your data during jalwa login and ensure secure jalwa games experience. Your privacy is our priority.">
+  <meta name="keywords" content="jalwa game privacy, jalwa games security, jalwa game login safety, jalwa login privacy, online gaming privacy">
+  <link rel="icon" href="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #00e7d0;
+      --secondary: #00ffaa;
+      --dark: #0a0f1c;
+      --darker: #060a14;
+      --text: #ffffff;
+      --text-muted: #b3c1ff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0 16px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(10, 15, 28, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 231, 208, 0.2);
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .header-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--dark);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 231, 208, 0.3);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 20px 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--secondary);
+    }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(0, 231, 208, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .page-title h1 {
+      font-size: 36px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-title p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Content Section */
+    .content-section {
+      margin: 40px 0;
+    }
+
+    .content-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: var(--primary);
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(0, 231, 208, 0.2);
+    }
+
+    .content-section h3 {
+      font-size: 20px;
+      margin: 24px 0 12px;
+      color: var(--secondary);
+    }
+
+    .content-section p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .content-section ul {
+      margin: 16px 0;
+      padding-left: 20px;
+    }
+
+    .content-section li {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .content-section strong {
+      color: var(--text);
+    }
+
+    /* Highlight Box */
+    .highlight {
+      background: rgba(0, 231, 208, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 4px;
+    }
+
+    .highlight strong {
+      color: var(--primary);
+    }
+
+    /* Info Box */
+    .info-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 231, 208, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    .info-box h4 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    /* Back to Home */
+    .back-home {
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 60px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .back-home a {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    /* Last Updated */
+    .last-updated {
+      text-align: center;
+      padding: 16px;
+      background: rgba(0, 231, 208, 0.05);
+      border-radius: 8px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="https://jalwagamee.netlify.app">
+          <img src="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" alt="Jalwa Game Logo" class="logo">
+        </a>
+        <div class="header-btns">
+          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-outline btn-sm">Jalwa Login</a>
+          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-primary btn-sm">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="https://jalwagamee.netlify.app">Home</a> / Privacy Policy
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <h1>Privacy Policy</h1>
+      <p>Your privacy and data security are fundamental to the Jalwa Game experience. Learn how we protect your information.</p>
+    </section>
+
+    <div class="last-updated">
+      Last Updated: November 24, 2024
+    </div>
+
+    <!-- Introduction -->
+    <section class="content-section">
+      <h2>Introduction to Jalwa Game Privacy Protection</h2>
+      
+      <p>Welcome to the Privacy Policy of <strong>Jalwa Game</strong>, India's premier online gaming platform. At Jalwa Games, we understand that your privacy is paramount when you complete your <strong>jalwa game login</strong> and engage with our gaming services. This comprehensive privacy policy outlines how we collect, use, protect, and manage your personal information across all <strong>jalwa games</strong> and services.</p>
+
+      <p>When you access <strong>jalwa login</strong> features or participate in any <strong>jalwa games login</strong> activities, you trust us with your personal data. We take this responsibility seriously and have implemented industry-leading security measures to ensure your information remains confidential and secure throughout your gaming experience on the Jalwa Game platform.</p>
+
+      <div class="highlight">
+        <strong>Our Commitment:</strong> Jalwa Games is committed to transparency in how we handle your data. Every time you perform a jalwa game login, your information is protected by bank-level encryption and strict security protocols.
+      </div>
+    </section>
+
+    <!-- Information We Collect -->
+    <section class="content-section">
+      <h2>Information We Collect on Jalwa Game Platform</h2>
+
+      <p>To provide you with the best possible experience on <strong>Jalwa Games</strong>, we collect certain information when you register, complete your <strong>jalwa login</strong>, and use our gaming services. Understanding what data we collect helps you make informed decisions about using our platform.</p>
+
+      <h3>Account Registration Information</h3>
+      <p>When you create your <strong>jalwa game</strong> account, we collect:</p>
+      <ul>
+        <li><strong>Personal Identification:</strong> Full name, date of birth, and gender for age verification and account security during jalwa games login</li>
+        <li><strong>Contact Details:</strong> Mobile number and email address for account verification, jalwa login authentication, and important communications</li>
+        <li><strong>Login Credentials:</strong> Encrypted password and optional security questions to protect your jalwa game login access</li>
+        <li><strong>Location Data:</strong> State and city information to ensure compliance with regional gaming regulations on Jalwa Games</li>
+        <li><strong>Referral Information:</strong> Invitation codes used during registration to attribute bonuses correctly</li>
+      </ul>
+
+      <h3>Financial Transaction Data</h3>
+      <p>To process deposits and withdrawals on <strong>Jalwa Game</strong>, we securely collect:</p>
+      <ul>
+        <li><strong>Payment Methods:</strong> Bank account details, UPI IDs, or e-wallet information for seamless transactions</li>
+        <li><strong>Transaction History:</strong> Records of all deposits and withdrawals made through your jalwa games account</li>
+        <li><strong>KYC Documents:</strong> Government-issued ID and address proof for verification and security compliance</li>
+        <li><strong>Financial Limits:</strong> Self-imposed deposit and betting limits for responsible gaming on Jalwa Games</li>
+      </ul>
+
+      <h3>Gaming Activity Information</h3>
+      <p>During your <strong>jalwa games</strong> sessions, we automatically collect:</p>
+      <ul>
+        <li><strong>Game Play Data:</strong> Games played, bets placed, wins and losses, and session durations</li>
+        <li><strong>Device Information:</strong> Device type, operating system, browser information used for jalwa game login</li>
+        <li><strong>IP Address:</strong> Your internet protocol address for security and fraud prevention</li>
+        <li><strong>Cookies Data:</strong> Session cookies to maintain your jalwa login status and personalize your experience</li>
+        <li><strong>User Preferences:</strong> Game favorites, notification settings, and display preferences on Jalwa Game</li>
+      </ul>
+
+      <div class="info-box">
+        <h4>Why We Need This Information</h4>
+        <p>Every piece of data collected serves a specific purpose: ensuring secure <strong>jalwa games login</strong> access, processing transactions quickly, preventing fraud, complying with legal requirements, and enhancing your overall gaming experience on the <strong>Jalwa Game</strong> platform.</p>
+      </div>
+    </section>
+
+    <!-- How We Use Information -->
+    <section class="content-section">
+      <h2>How Jalwa Games Uses Your Information</h2>
+
+      <p>Your personal data collected during <strong>jalwa game login</strong> and gaming activities is used exclusively to enhance your experience and ensure platform security. We never sell your personal information to third parties.</p>
+
+      <h3>Account Management and Security</h3>
+      <ul>
+        <li><strong>Authentication:</strong> Verifying your identity during each jalwa login attempt to prevent unauthorized access</li>
+        <li><strong>Account Recovery:</strong> Helping you regain access to your jalwa games account if you forget credentials</li>
+        <li><strong>Fraud Prevention:</strong> Monitoring unusual activity patterns to protect your Jalwa Game account from security threats</li>
+        <li><strong>Age Verification:</strong> Ensuring all jalwa games players meet the minimum age requirement of 18 years</li>
+      </ul>
+
+      <h3>Transaction Processing</h3>
+      <ul>
+        <li><strong>Payment Processing:</strong> Facilitating secure deposits and withdrawals on the jalwa game platform</li>
+        <li><strong>Bonus Credits:</strong> Automatically crediting promotional bonuses and rewards to your account after jalwa games login</li>
+        <li><strong>Transaction Records:</strong> Maintaining accurate financial records for transparency and regulatory compliance</li>
+        <li><strong>Tax Reporting:</strong> Generating required tax documentation for significant winnings on Jalwa Games</li>
+      </ul>
+
+      <h3>Service Improvement</h3>
+      <ul>
+        <li><strong>Platform Optimization:</strong> Analyzing usage patterns to improve jalwa game features and performance</li>
+        <li><strong>Game Development:</strong> Understanding which jalwa games are most popular to guide new game additions</li>
+        <li><strong>User Experience:</strong> Personalizing your jalwa login dashboard based on your gaming preferences</li>
+        <li><strong>Customer Support:</strong> Providing better assistance by understanding your usage history on Jalwa Game</li>
+      </ul>
+
+      <h3>Communication</h3>
+      <ul>
+        <li><strong>Account Updates:</strong> Notifying you about jalwa games login security alerts and account changes</li>
+        <li><strong>Promotional Offers:</strong> Sending information about bonuses and new features (you can opt out anytime)</li>
+        <li><strong>Customer Service:</strong> Responding to your inquiries about jalwa game services</li>
+        <li><strong>Legal Notices:</strong> Communicating important policy changes affecting your Jalwa Games experience</li>
+      </ul>
+    </section>
+
+    <!-- Data Protection -->
+    <section class="content-section">
+      <h2>How Jalwa Game Protects Your Data</h2>
+
+      <p>Security is the foundation of every <strong>jalwa games login</strong> session. We employ multiple layers of protection to ensure your personal and financial information remains safe when using the <strong>Jalwa Game</strong> platform.</p>
+
+      <h3>Technical Security Measures</h3>
+      <ul>
+        <li><strong>256-Bit SSL Encryption:</strong> All data transmitted during jalwa login and gaming is encrypted using military-grade security</li>
+        <li><strong>Secure Servers:</strong> Your jalwa game data is stored on protected servers with 24/7 monitoring and intrusion detection</li>
+        <li><strong>Firewall Protection:</strong> Advanced firewalls prevent unauthorized access to jalwa games databases</li>
+        <li><strong>Regular Security Audits:</strong> Third-party experts regularly test our systems for vulnerabilities</li>
+        <li><strong>Data Backup:</strong> Multiple secure backups ensure your jalwa game account information is never lost</li>
+      </ul>
+
+      <h3>Access Control</h3>
+      <ul>
+        <li><strong>Two-Factor Authentication:</strong> Optional additional security layer for jalwa games login sessions</li>
+        <li><strong>Employee Access Limits:</strong> Only authorized personnel can access user data on a need-to-know basis</li>
+        <li><strong>Activity Monitoring:</strong> All access to jalwa game systems is logged and regularly reviewed</li>
+        <li><strong>Secure Passwords:</strong> We enforce strong password requirements for every jalwa login credential</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>Your Role in Security:</strong> While Jalwa Games implements robust security measures, you also play a crucial role. Never share your jalwa game login credentials, use strong unique passwords, and enable two-factor authentication for maximum account protection.
+      </div>
+    </section>
+
+    <!-- Data Sharing -->
+    <section class="content-section">
+      <h2>When Jalwa Games Shares Your Information</h2>
+
+      <p>We maintain strict control over your personal data. <strong>Jalwa Game</strong> only shares your information in specific, limited circumstances, always prioritizing your privacy and security.</p>
+
+      <h3>Necessary Third-Party Services</h3>
+      <ul>
+        <li><strong>Payment Processors:</strong> Securely processing your deposits and withdrawals on jalwa games requires sharing necessary payment information with certified payment gateways</li>
+        <li><strong>KYC Verification:</strong> Age and identity verification services help maintain jalwa game platform integrity</li>
+        <li><strong>Customer Support Tools:</strong> Encrypted support ticket systems to assist with jalwa login and gameplay issues</li>
+        <li><strong>Analytics Providers:</strong> Anonymized usage data helps improve jalwa games features (no personal identification)</li>
+      </ul>
+
+      <h3>Legal Requirements</h3>
+      <p>Jalwa Games may disclose your information when:</p>
+      <ul>
+        <li>Required by Indian law, regulation, or legal process</li>
+        <li>Necessary to protect the rights, property, or safety of jalwa game users</li>
+        <li>Responding to verified requests from law enforcement regarding jalwa games activities</li>
+        <li>Preventing fraud or investigating suspected violations of our terms of service</li>
+      </ul>
+
+      <h3>What We Never Do</h3>
+      <ul>
+        <li><strong>No Data Selling:</strong> We NEVER sell your jalwa game information to advertisers or marketing companies</li>
+        <li><strong>No Spam:</strong> We don't share your contact details for unsolicited promotional purposes</li>
+        <li><strong>No Public Disclosure:</strong> Your jalwa games login history and personal details remain confidential</li>
+      </ul>
+    </section>
+
+    <!-- Your Rights -->
+    <section class="content-section">
+      <h2>Your Privacy Rights on Jalwa Game</h2>
+
+      <p>As a <strong>jalwa games</strong> user, you have significant control over your personal information. We respect your rights and provide easy ways to exercise them.</p>
+
+      <h3>Access and Review</h3>
+      <p>After <strong>jalwa login</strong>, you can:</p>
+      <ul>
+        <li>View all personal information stored in your jalwa game account</li>
+        <li>Download your transaction history and gaming activity records</li>
+        <li>Review communication preferences and notification settings</li>
+        <li>Check which devices have accessed your jalwa games account</li>
+      </ul>
+
+      <h3>Update and Correct</h3>
+      <p>You can update your <strong>Jalwa Game</strong> information at any time:</p>
+      <ul>
+        <li>Change contact details directly from your jalwa login dashboard</li>
+        <li>Update payment methods and banking information securely</li>
+        <li>Modify communication preferences for jalwa games notifications</li>
+        <li>Contact support to update verification documents if needed</li>
+      </ul>
+
+      <h3>Delete and Restrict</h3>
+      <ul>
+        <li><strong>Account Deletion:</strong> Request complete removal of your jalwa game account (subject to legal retention requirements)</li>
+        <li><strong>Marketing Opt-Out:</strong> Unsubscribe from promotional emails about jalwa games at any time</li>
+        <li><strong>Cookie Management:</strong> Control cookie settings through your browser for jalwa login sessions</li>
+        <li><strong>Data Portability:</strong> Request a copy of your data in a portable format</li>
+      </ul>
+
+      <div class="info-box">
+        <h4>How to Exercise Your Rights</h4>
+        <p>To exercise any of these rights regarding your <strong>jalwa games</strong> account, simply contact our privacy team through the customer support section after <strong>jalwa game login</strong>, or email us directly. We respond to all legitimate requests within 30 days.</p>
+      </div>
+    </section>
+
+    <!-- Cookies and Tracking -->
+    <section class="content-section">
+      <h2>Cookies and Tracking Technology on Jalwa Games</h2>
+
+      <p><strong>Jalwa Game</strong> uses cookies and similar technologies to enhance your gaming experience and maintain your <strong>jalwa login</strong> session. Understanding how we use these tools helps you make informed choices.</p>
+
+      <h3>Types of Cookies We Use</h3>
+      <ul>
+        <li><strong>Essential Cookies:</strong> Required for jalwa games login functionality and basic platform operations (cannot be disabled)</li>
+        <li><strong>Security Cookies:</strong> Detect fraudulent jalwa game login attempts and protect your account</li>
+        <li><strong>Preference Cookies:</strong> Remember your settings and preferences on jalwa games</li>
+        <li><strong>Analytics Cookies:</strong> Help us understand how users interact with the jalwa login platform to improve services</li>
+      </ul>
+
+      <h3>Managing Cookies</h3>
+      <p>You can control cookie settings through your browser, though disabling essential cookies may affect <strong>jalwa games</strong> functionality. Most browsers allow you to refuse cookies or delete them after your jalwa game login session.</p>
+    </section>
+
+    <!-- Children's Privacy -->
+    <section class="content-section">
+      <h2>Children's Privacy Protection</h2>
+
+      <p><strong>Jalwa Games</strong> is strictly an adult gaming platform. We do not knowingly collect information from anyone under 18 years of age.</p>
+
+      <ul>
+        <li>Age verification is mandatory during jalwa game registration</li>
+        <li>We immediately delete any accounts discovered to belong to minors</li>
+        <li>Parents should monitor device usage to prevent unauthorized jalwa login by minors</li>
+        <li>Report suspected underage jalwa games usage immediately for investigation</li>
+      </ul>
+    </section>
+
+    <!-- International Users -->
+    <section class="content-section">
+      <h2>International Data Transfers</h2>
+
+      <p>While <strong>Jalwa Game</strong> primarily serves Indian users, our servers and third-party services may involve international data transfers. We ensure all transfers comply with applicable data protection laws and maintain the same level of protection for your <strong>jalwa games login</strong> information regardless of location.</p>
+    </section>
+
+    <!-- Changes to Policy -->
+    <section class="content-section">
+      <h2>Updates to This Privacy Policy</h2>
+
+      <p>As <strong>Jalwa Games</strong> evolves, we may update this privacy policy to reflect new features, legal requirements, or security improvements. Significant changes will be communicated through:</p>
+
+      <ul>
+        <li>Notifications in your jalwa game dashboard after jalwa login</li>
+        <li>Email alerts to your registered address</li>
+        <li>Prominent banner on the jalwa games platform</li>
+        <li>Updated "Last Modified" date at the top of this policy</li>
+      </ul>
+
+      <p>Continued use of <strong>jalwa game</strong> services after policy updates indicates your acceptance of the changes.</p>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="content-section">
+      <h2>Contact Us About Privacy</h2>
+
+      <p>If you have questions, concerns, or requests regarding your privacy on <strong>Jalwa Games</strong>, we're here to help:</p>
+
+      <div class="info-box">
+        <h4>Privacy Support</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>📧 <strong>Email:</strong> privacy@jalwagames.com</li>
+          <li>💬 <strong>Live Chat:</strong> Available 24/7 after jalwa game login</li>
+          <li>📱 <strong>Telegram:</strong> Official Jalwa Games support channel</li>
+          <li>⏱️ <strong>Response Time:</strong> Within 48 hours for all privacy inquiries</li>
+        </ul>
+      </div>
+
+      <p>Our dedicated privacy team is committed to addressing your concerns promptly and ensuring your <strong>jalwa games</strong> experience remains secure and transparent.</p>
+    </section>
+
+    <!-- Back to Home -->
+    <section class="back-home">
+      <a href="https://jalwagamee.netlify.app" class="btn btn-primary">Back to Jalwa Game Home</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="https://jalwagamee.netlify.app">Home</a>
+        <a href="https://jalwagamee.netlify.app/privacy.html">Privacy Policy</a>
+        <a href="https://jalwagamee.netlify.app/terms.html">Terms & Conditions</a>
+        <a href="https://jalwagamee.netlify.app/responsible.html">Responsible Gaming</a>
+        <a href="https://jalwagamee.netlify.app/contact.html">Contact Us</a>
+      </div>
+      
+      <p class="footer-text">© 2024 Jalwa Game. All rights reserved. | Play responsibly. 18+ only.</p>
+      
+      <p class="footer-text" style="margin-top: 12px;">
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" style="color: var(--primary);">Jalwa Login</a> | 
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" style="color: var(--primary);">Jalwa Games Register</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
