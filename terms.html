@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Terms & Conditions | Jalwa Game - Gaming Rules & Guidelines</title>
+  <meta name="description" content="Read Jalwa Game's terms and conditions. Understand the rules for jalwa login, jalwa games gameplay, and platform usage. Essential information for all users.">
+  <meta name="keywords" content="jalwa game terms, jalwa games rules, jalwa game login guidelines, jalwa login conditions, online gaming terms">
+  <link rel="icon" href="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" type="image/png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #00e7d0;
+      --secondary: #00ffaa;
+      --dark: #0a0f1c;
+      --darker: #060a14;
+      --text: #ffffff;
+      --text-muted: #b3c1ff;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 0 16px;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(10, 15, 28, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(0, 231, 208, 0.2);
+      z-index: 100;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .header-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      text-align: center;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: var(--dark);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+
+    .btn-sm {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 231, 208, 0.3);
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      padding: 20px 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .breadcrumb a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--secondary);
+    }
+
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(0, 231, 208, 0.2);
+      margin-bottom: 40px;
+    }
+
+    .page-title h1 {
+      font-size: 36px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-title p {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Content Section */
+    .content-section {
+      margin: 40px 0;
+    }
+
+    .content-section h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: var(--primary);
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(0, 231, 208, 0.2);
+    }
+
+    .content-section h3 {
+      font-size: 20px;
+      margin: 24px 0 12px;
+      color: var(--secondary);
+    }
+
+    .content-section p {
+      margin-bottom: 16px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .content-section ul {
+      margin: 16px 0;
+      padding-left: 20px;
+    }
+
+    .content-section li {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .content-section ol {
+      margin: 16px 0;
+      padding-left: 20px;
+    }
+
+    .content-section ol li {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+
+    .content-section strong {
+      color: var(--text);
+    }
+
+    /* Highlight Box */
+    .highlight {
+      background: rgba(0, 231, 208, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 20px;
+      margin: 24px 0;
+      border-radius: 4px;
+    }
+
+    .highlight strong {
+      color: var(--primary);
+    }
+
+    /* Warning Box */
+    .warning-box {
+      background: rgba(255, 170, 0, 0.1);
+      border: 1px solid rgba(255, 170, 0, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    .warning-box h4 {
+      color: #ffaa00;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    /* Info Box */
+    .info-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(0, 231, 208, 0.2);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+
+    .info-box h4 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    /* Back to Home */
+    .back-home {
+      text-align: center;
+      padding: 40px 0;
+      margin-top: 60px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .back-home a {
+      display: inline-block;
+      padding: 14px 32px;
+      font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 16px;
+    }
+
+    /* Last Updated */
+    .last-updated {
+      text-align: center;
+      padding: 16px;
+      background: rgba(0, 231, 208, 0.05);
+      border-radius: 8px;
+      margin-bottom: 30px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="https://jalwagamee.netlify.app">
+          <img src="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" alt="Jalwa Game Logo" class="logo">
+        </a>
+        <div class="header-btns">
+          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-outline btn-sm">Jalwa Login</a>
+          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-primary btn-sm">Register</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="https://jalwagamee.netlify.app">Home</a> / Terms & Conditions
+    </div>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <h1>Terms & Conditions</h1>
+      <p>Please read these terms carefully before using Jalwa Game services. Your jalwa login signifies acceptance of these conditions.</p>
+    </section>
+
+    <div class="last-updated">
+      Last Updated: November 24, 2024
+    </div>
+
+    <!-- Introduction -->
+    <section class="content-section">
+      <h2>Agreement to Terms for Jalwa Game Platform</h2>
+      
+      <p>Welcome to <strong>Jalwa Game</strong>, India's leading online gaming platform. These Terms and Conditions constitute a legally binding agreement between you and Jalwa Games. By completing your <strong>jalwa game login</strong>, registering an account, or accessing any <strong>jalwa games</strong> services, you acknowledge that you have read, understood, and agree to be bound by these terms.</p>
+
+      <p>If you do not agree with any part of these terms, you must immediately cease using the <strong>Jalwa Game</strong> platform and refrain from completing any <strong>jalwa login</strong> or <strong>jalwa games login</strong> activities. Continued use of our services after any modifications to these terms indicates your acceptance of such changes.</p>
+
+      <div class="warning-box">
+        <h4>⚠️ Important Notice</h4>
+        <p>By performing a <strong>jalwa game login</strong>, you confirm that you are at least 18 years of age and legally permitted to participate in online gaming activities in your jurisdiction. Violation of these fundamental requirements may result in immediate account termination and forfeiture of funds.</p>
+      </div>
+
+      <p>These terms govern all aspects of your interaction with <strong>Jalwa Games</strong>, including but not limited to account creation, <strong>jalwa games login</strong> procedures, gameplay, financial transactions, bonuses, and dispute resolution.</p>
+    </section>
+
+    <!-- Eligibility -->
+    <section class="content-section">
+      <h2>Eligibility Requirements for Jalwa Games</h2>
+
+      <p>To create an account and complete your <strong>jalwa login</strong> on the <strong>Jalwa Game</strong> platform, you must meet the following eligibility criteria:</p>
+
+      <h3>Age and Legal Capacity</h3>
+      <ul>
+        <li><strong>Minimum Age:</strong> You must be at least 18 years old to register for jalwa games. Age verification is mandatory during account setup.</li>
+        <li><strong>Legal Competency:</strong> You must have the legal capacity to enter into binding contracts in your jurisdiction when accessing jalwa game login.</li>
+        <li><strong>Parental Responsibility:</strong> Parents and guardians must prevent minors from accessing jalwa games on their devices.</li>
+        <li><strong>Identity Verification:</strong> You agree to provide accurate identification documents when requested to verify your jalwa game account.</li>
+      </ul>
+
+      <h3>Geographic Restrictions</h3>
+      <ul>
+        <li><strong>Permitted Locations:</strong> Jalwa games services are available in regions where online gaming is legally permitted. You are responsible for ensuring compliance with local laws before jalwa login.</li>
+        <li><strong>Restricted Jurisdictions:</strong> If online gaming becomes prohibited in your location, you must immediately cease jalwa game activities and withdraw your balance.</li>
+        <li><strong>Travel Restrictions:</strong> When traveling, ensure jalwa games are legal in your temporary location before attempting jalwa games login.</li>
+        <li><strong>VPN Prohibition:</strong> Using VPNs or proxy servers to circumvent geographic restrictions is strictly prohibited on the jalwa game platform.</li>
+      </ul>
+
+      <h3>Account Limitations</h3>
+      <ul>
+        <li><strong>Single Account Policy:</strong> Each individual is permitted only ONE jalwa game account. Multiple accounts will result in suspension and fund forfeiture.</li>
+        <li><strong>Personal Use Only:</strong> Your jalwa login credentials are for your exclusive personal use and must not be shared with others.</li>
+        <li><strong>Accurate Information:</strong> All information provided during jalwa games registration must be truthful, current, and complete.</li>
+        <li><strong>Account Responsibility:</strong> You are fully responsible for all activities conducted through your jalwa game login.</li>
+      </ul>
+
+      <div class="info-box">
+        <h4>Verification Process</h4>
+        <p><strong>Jalwa Games</strong> reserves the right to request identity verification documents at any time. Failure to provide requested documentation within the specified timeframe may result in temporary suspension of your <strong>jalwa game login</strong> access and withdrawal capabilities until verification is complete.</p>
+      </div>
+    </section>
+
+    <!-- Account Management -->
+    <section class="content-section">
+      <h2>Account Registration and Jalwa Login Management</h2>
+
+      <p>Proper account management is essential for a secure <strong>Jalwa Game</strong> experience. Understanding these requirements helps protect your <strong>jalwa games</strong> account from unauthorized access.</p>
+
+      <h3>Registration Process</h3>
+      <ul>
+        <li><strong>Accurate Information:</strong> Provide truthful personal details during jalwa game registration including name, date of birth, address, and contact information.</li>
+        <li><strong>Valid Mobile Number:</strong> A working mobile number is required for jalwa login verification and important account notifications.</li>
+        <li><strong>Secure Password:</strong> Create a strong, unique password for your jalwa games account using a combination of letters, numbers, and special characters.</li>
+        <li><strong>Email Verification:</strong> Complete email verification to enable full jalwa game functionality and security features.</li>
+      </ul>
+
+      <h3>Login Security</h3>
+      <ul>
+        <li><strong>Credential Protection:</strong> Keep your jalwa game login credentials confidential. Never share your password with anyone, including customer support.</li>
+        <li><strong>Two-Factor Authentication:</strong> Enable 2FA for enhanced jalwa login security. This adds an extra protection layer against unauthorized access.</li>
+        <li><strong>Suspicious Activity:</strong> Immediately report any unauthorized jalwa games login attempts or suspicious account activity to our security team.</li>
+        <li><strong>Password Changes:</strong> Regularly update your jalwa game password and immediately change it if you suspect compromise.</li>
+        <li><strong>Logout Requirement:</strong> Always complete proper jalwa login logout procedures, especially on shared or public devices.</li>
+      </ul>
+
+      <h3>Account Maintenance</h3>
+      <ul>
+        <li><strong>Information Updates:</strong> Notify Jalwa Games within 7 days of any changes to your personal information, including address, phone number, or email.</li>
+        <li><strong>Inactive Accounts:</strong> Accounts with no jalwa game login activity for 12 consecutive months may be classified as dormant and subject to maintenance fees.</li>
+        <li><strong>Account Closure:</strong> You may request account closure at any time by contacting customer support after completing your jalwa games login.</li>
+        <li><strong>Balance Withdrawal:</strong> Before account closure, withdraw all available funds from your jalwa game balance to avoid forfeiture.</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>Account Responsibility:</strong> You are solely responsible for all activities conducted through your <strong>jalwa game login</strong>, including any transactions, bets, or gameplay. Jalwa Games is not liable for losses resulting from unauthorized access due to credential mishandling.
+      </div>
+    </section>
+
+    <!-- Gameplay Rules -->
+    <section class="content-section">
+      <h2>Gameplay Rules and Jalwa Games Conduct</h2>
+
+      <p>Fair play is fundamental to the <strong>Jalwa Game</strong> experience. All users must adhere to these gameplay standards when accessing <strong>jalwa games</strong> after <strong>jalwa login</strong>.</p>
+
+      <h3>Fair Gaming Principles</h3>
+      <ul>
+        <li><strong>Individual Play:</strong> All jalwa games must be played individually. Collusion, syndicate play, or coordinated betting is strictly prohibited.</li>
+        <li><strong>No Exploitation:</strong> Exploiting bugs, glitches, or system errors in jalwa game software is forbidden and will result in account termination.</li>
+        <li><strong>Automated Tools Prohibited:</strong> Using bots, scripts, or automated software for jalwa games login or gameplay violates these terms.</li>
+        <li><strong>Single Device:</strong> Each jalwa game session should occur on one device. Multiple simultaneous logins may trigger security protocols.</li>
+        <li><strong>Honest Gameplay:</strong> Manipulation, cheating, or fraudulent behavior in any jalwa games activity will not be tolerated.</li>
+      </ul>
+
+      <h3>Game Outcomes</h3>
+      <ul>
+        <li><strong>Random Results:</strong> All jalwa game outcomes are determined by certified Random Number Generators (RNG) ensuring fair play.</li>
+        <li><strong>Result Finality:</strong> Once jalwa games results are confirmed, they are final unless a system error is proven.</li>
+        <li><strong>Disconnection Policy:</strong> If disconnected during jalwa game play, your bets remain valid and will be settled according to actual outcomes.</li>
+        <li><strong>Dispute Resolution:</strong> Any disputes regarding jalwa games outcomes must be raised within 7 days with supporting evidence.</li>
+      </ul>
+
+      <h3>Prohibited Activities</h3>
+      <p>The following actions will result in immediate suspension of your <strong>jalwa game login</strong> and potential legal action:</p>
+      <ul>
+        <li>Money laundering or other illegal financial activities through jalwa games</li>
+        <li>Fraudulent deposit or withdrawal attempts on the jalwa game platform</li>
+        <li>Abusing promotional offers or exploiting bonus structures</li>
+        <li>Reverse engineering or attempting to hack jalwa games systems</li>
+        <li>Creating multiple accounts to claim additional bonuses</li>
+        <li>Sharing insider information or engaging in match-fixing (sports betting)</li>
+        <li>Harassment, abuse, or threatening behavior toward other jalwa game users or staff</li>
+      </ul>
+
+      <div class="warning-box">
+        <h4>⚠️ Anti-Fraud Measures</h4>
+        <p><strong>Jalwa Games</strong> employs sophisticated fraud detection systems that continuously monitor all <strong>jalwa game login</strong> sessions and gameplay patterns. Suspicious activities trigger automatic security reviews and may result in immediate account suspension pending investigation.</p>
+      </div>
+    </section>
+
+    <!-- Financial Terms -->
+    <section class="content-section">
+      <h2>Financial Transactions on Jalwa Game Platform</h2>
+
+      <p>Understanding the financial terms ensures smooth transactions when using <strong>jalwa games</strong> deposit and withdrawal services.</p>
+
+      <h3>Deposits</h3>
+      <ul>
+        <li><strong>Minimum Deposit:</strong> The minimum deposit amount for jalwa game accounts is ₹100, allowing accessibility for all players.</li>
+        <li><strong>Payment Methods:</strong> Jalwa games supports UPI, bank transfers, e-wallets, and cards. All deposits are processed instantly after jalwa login.</li>
+        <li><strong>Deposit Ownership:</strong> You must be the authorized owner of all payment methods used for jalwa game deposits.</li>
+        <li><strong>Third-Party Deposits:</strong> Deposits from third-party accounts are prohibited. Only personal payment methods linked to your verified identity are accepted.</li>
+        <li><strong>Failed Deposits:</strong> If a jalwa games deposit fails, funds will be returned to the source account within 3-5 business days.</li>
+      </ul>
+
+      <h3>Withdrawals</h3>
+      <ul>
+        <li><strong>Minimum Withdrawal:</strong> You can withdraw a minimum of ₹200 from your jalwa game account.</li>
+        <li><strong>Processing Time:</strong> Most jalwa games withdrawals are processed within 5-15 minutes, with maximum processing of 24 hours during high-volume periods.</li>
+        <li><strong>Verification Requirement:</strong> First-time withdrawals require identity verification. Complete KYC before requesting jalwa game withdrawals.</li>
+        <li><strong>Withdrawal Method:</strong> Withdrawals must be made to the same payment method used for deposits when possible for security purposes.</li>
+        <li><strong>Bonus Wagering:</strong> Bonus funds must meet wagering requirements before becoming eligible for withdrawal from jalwa games.</li>
+        <li><strong>Transaction Fees:</strong> Jalwa game does not charge withdrawal fees, though your payment provider may impose their own charges.</li>
+      </ul>
+
+      <h3>Bonus Terms</h3>
+      <ul>
+        <li><strong>Welcome Bonus:</strong> New users receive ₹500 upon registration and first jalwa game login. This bonus is subject to specific wagering requirements.</li>
+        <li><strong>Wagering Requirements:</strong> Most jalwa games bonuses require wagering before withdrawal. Requirements vary by promotion and are clearly stated.</li>
+        <li><strong>Bonus Abuse:</strong> Systematic bonus exploitation or circumventing bonus terms will result in bonus forfeiture and potential account suspension.</li>
+        <li><strong>Promotional Rules:</strong> Each jalwa game promotion has specific terms. Read promotion details before participating.</li>
+        <li><strong>Maximum Bet Limits:</strong> When playing with bonus funds, maximum bet restrictions may apply on certain jalwa games.</li>
+      </ul>
+
+      <div class="info-box">
+        <h4>Transaction Security</h4>
+        <p>All financial transactions on <strong>Jalwa Game</strong> are protected by 256-bit SSL encryption. Your payment information is never stored on our servers after <strong>jalwa games login</strong>. Certified payment gateways handle all processing, ensuring bank-level security for your funds.</p>
+      </div>
+    </section>
+
+    <!-- Responsible Gaming -->
+    <section class="content-section">
+      <h2>Responsible Gaming Obligations</h2>
+
+      <p><strong>Jalwa Games</strong> is committed to promoting responsible gaming. We provide tools to help you maintain control over your <strong>jalwa game</strong> activities.</p>
+
+      <h3>Self-Management Tools</h3>
+      <ul>
+        <li><strong>Deposit Limits:</strong> Set daily, weekly, or monthly deposit limits after jalwa game login to control spending.</li>
+        <li><strong>Loss Limits:</strong> Establish maximum loss thresholds to prevent excessive gambling on jalwa games.</li>
+        <li><strong>Session Time Limits:</strong> Configure automatic logout after specified durations to manage jalwa game playing time.</li>
+        <li><strong>Reality Checks:</strong> Enable periodic notifications reminding you of time spent in jalwa games sessions.</li>
+      </ul>
+
+      <h3>Self-Exclusion</h3>
+      <ul>
+        <li><strong>Temporary Exclusion:</strong> Request temporary suspension of your jalwa game login access for periods ranging from 24 hours to 6 months.</li>
+        <li><strong>Permanent Exclusion:</strong> Request permanent self-exclusion from jalwa games if you feel gambling is becoming problematic.</li>
+        <li><strong>Cooling-Off Period:</strong> Take a break from jalwa game activities without closing your account. Your balance remains secure.</li>
+        <li><strong>No Override:</strong> Self-exclusion requests cannot be reversed before the selected period expires, protecting your commitment.</li>
+      </ul>
+
+      <h3>Warning Signs</h3>
+      <p>Be aware of these indicators that <strong>jalwa games</strong> activity may be becoming problematic:</p>
+      <ul>
+        <li>Spending more money on jalwa game activities than you can afford</li>
+        <li>Neglecting personal, professional, or family responsibilities due to jalwa games</li>
+        <li>Borrowing money or selling possessions to fund jalwa game deposits</li>
+        <li>Chasing losses by increasing bets after losing on jalwa games</li>
+        <li>Lying to family or friends about jalwa game login frequency or spending</li>
+        <li>Feeling anxious, depressed, or guilty about jalwa games participation</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>Get Help:</strong> If you or someone you know is struggling with gaming behavior, please contact professional helplines available in India or reach out to our customer support team after <strong>jalwa login</strong> for guidance on self-exclusion options.
+      </div>
+    </section>
+
+    <!-- Intellectual Property -->
+    <section class="content-section">
+      <h2>Intellectual Property Rights</h2>
+
+      <p>All content, features, and functionality on the <strong>Jalwa Game</strong> platform are protected by intellectual property laws.</p>
+
+      <h3>Jalwa Games Ownership</h3>
+      <ul>
+        <li><strong>Platform Content:</strong> All jalwa game software, graphics, logos, interfaces, and game designs are proprietary to Jalwa Games.</li>
+        <li><strong>Trademarks:</strong> "Jalwa Game," "Jalwa Games," and associated logos are registered trademarks. Unauthorized use is prohibited.</li>
+        <li><strong>Game Mechanics:</strong> The unique gameplay features and algorithms used in jalwa games are protected intellectual property.</li>
+        <li><strong>User Content:</strong> By uploading content to jalwa game (profile pictures, comments), you grant us a license to use it as necessary for platform operation.</li>
+      </ul>
+
+      <h3>Usage Restrictions</h3>
+      <ul>
+        <li>You may not copy, reproduce, or redistribute jalwa games content without written permission</li>
+        <li>Screen scraping, data mining, or automated extraction from jalwa game platform is prohibited</li>
+        <li>Reverse engineering or decompiling jalwa games software violates these terms</li>
+        <li>Creating derivative works based on jalwa game content requires explicit authorization</li>
+      </ul>
+    </section>
+
+    <!-- Liability and Disclaimers -->
+    <section class="content-section">
+      <h2>Liability Limitations and Disclaimers</h2>
+
+      <p>By using <strong>Jalwa Games</strong>, you acknowledge and agree to the following limitations:</p>
+
+      <h3>Service Availability</h3>
+      <ul>
+        <li><strong>No Guarantee:</strong> While we strive for 24/7 availability, jalwa game does not guarantee uninterrupted access to jalwa games login or platform services.</li>
+        <li><strong>Maintenance:</strong> Scheduled maintenance may temporarily prevent jalwa login access. We provide advance notice when possible.</li>
+        <li><strong>Technical Issues:</strong> Jalwa games is not liable for losses resulting from internet connectivity issues, device malfunctions, or third-party service failures.</li>
+        <li><strong>Force Majeure:</strong> We are not responsible for jalwa game service interruptions caused by events beyond our control.</li>
+      </ul>
+
+      <h3>Limitation of Liability</h3>
+      <ul>
+        <li><strong>Maximum Liability:</strong> Jalwa Games' total liability to you for any claims shall not exceed the amount in your jalwa game account balance at the time of the incident.</li>
+        <li><strong>Indirect Damages:</strong> We are not liable for indirect, consequential, or punitive damages arising from jalwa games use.</li>
+        <li><strong>Third-Party Links:</strong> Jalwa game is not responsible for content on external websites linked from our platform.</li>
+        <li><strong>User Decisions:</strong> You acknowledge that all jalwa games betting and gaming decisions are made at your own discretion and risk.</li>
+      </ul>
+
+      <div class="warning-box">
+        <h4>⚠️ Gaming Risk Acknowledgment</h4>
+        <p>You acknowledge that <strong>jalwa games</strong> involve risk and there is no guarantee of winning. The entertainment value should be your primary motivation for <strong>jalwa game login</strong> and participation. Never bet more than you can afford to lose.</p>
+      </div>
+    </section>
+
+    <!-- Account Termination -->
+    <section class="content-section">
+      <h2>Account Suspension and Termination</h2>
+
+      <p><strong>Jalwa Games</strong> reserves the right to suspend or terminate your <strong>jalwa game login</strong> access under certain circumstances.</p>
+
+      <h3>Grounds for Termination</h3>
+      <ul>
+        <li>Violation of any terms outlined in this agreement regarding jalwa games usage</li>
+        <li>Fraudulent activity or providing false information during jalwa game registration</li>
+        <li>Suspected money laundering or illegal activity through jalwa login</li>
+        <li>Abusive behavior toward other users or jalwa games staff</li>
+        <li>Multiple account creation to exploit jalwa game bonuses</li>
+        <li>Failure to complete identity verification when requested</li>
+        <li>Chargebacks or payment disputes related to jalwa games transactions</li>
+      </ul>
+
+      <h3>Termination Process</h3>
+      <ul>
+        <li><strong>Investigation Period:</strong> Your jalwa game login may be temporarily suspended during investigation of suspected violations.</li>
+        <li><strong>Notification:</strong> You will receive notification of account termination via email and SMS registered with jalwa games.</li>
+        <li><strong>Fund Settlement:</strong> Legitimate funds in your jalwa game account will be returned after deducting any applicable fees or bonuses.</li>
+        <li><strong>Permanent Ban:</strong> Serious violations may result in permanent ban from jalwa games with no opportunity for reinstatement.</li>
+      </ul>
+
+      <h3>Voluntary Closure</h3>
+      <ul>
+        <li>You may request account closure at any time by contacting support after jalwa login</li>
+        <li>Withdraw all remaining funds before finalizing jalwa game account closure</li>
+        <li>Account closure is typically processed within 48 hours of request submission</li>
+        <li>Closed accounts cannot be reopened; you must register as a new user for future jalwa games access</li>
+      </ul>
+    </section>
+
+    <!-- Dispute Resolution -->
+    <section class="content-section">
+      <h2>Dispute Resolution and Complaints</h2>
+
+      <p>If you have concerns or disputes regarding your <strong>Jalwa Game</strong> experience, we encourage prompt resolution through our established procedures.</p>
+
+      <h3>Complaint Process</h3>
+      <ol>
+        <li><strong>Initial Contact:</strong> Submit your complaint through the customer support section after jalwa game login, providing detailed information and supporting evidence.</li>
+        <li><strong>Investigation:</strong> Our team will investigate your jalwa games complaint within 48 hours and request additional information if needed.</li>
+        <li><strong>Resolution Proposal:</strong> We will provide a resolution proposal within 7 business days of receiving complete information about your jalwa game issue.</li>
+        <li><strong>Escalation:</strong> If unsatisfied with the initial resolution, you may escalate to senior management for further review of your jalwa games dispute.</li>
+        <li><strong>Final Decision:</strong> Management's decision on jalwa game disputes is final and binding unless resolved through legal channels.</li>
+      </ol>
+
+      <h3>Governing Law</h3>
+      <ul>
+        <li><strong>Jurisdiction:</strong> These terms are governed by the laws of India. Any disputes arising from jalwa games usage will be subject to Indian jurisdiction.</li>
+        <li><strong>Arbitration:</strong> Disputes that cannot be resolved internally may be submitted to binding arbitration before pursuing legal action.</li>
+        <li><strong>Language:</strong> In case of discrepancies between translated versions, the English version of jalwa game terms prevails.</li>
+      </ul>
+    </section>
+
+    <!-- Privacy and Data -->
+    <section class="content-section">
+      <h2>Privacy and Data Protection</h2>
+
+      <p>Your privacy is important to <strong>Jalwa Games</strong>. Our comprehensive Privacy Policy governs how we collect, use, and protect information obtained during <strong>jalwa game login</strong> and gameplay.</p>
+
+      <ul>
+        <li>By using jalwa games, you consent to data collection as outlined in our Privacy Policy</li>
+        <li>We implement industry-standard security measures to protect your jalwa game account information</li>
+        <li>Your personal data will never be sold to third parties for marketing purposes</li>
+        <li>Access our full <a href="#" style="color: var(--primary);">Privacy Policy</a> for detailed information about jalwa login data handling</li>
+      </ul>
+    </section>
+
+    <!-- Communication -->
+    <section class="content-section">
+      <h2>Communication and Notifications</h2>
+
+      <p>By registering for <strong>Jalwa Game</strong>, you consent to receiving communications from us regarding your account and services.</p>
+
+      <h3>Types of Communications</h3>
+      <ul>
+        <li><strong>Transactional Messages:</strong> Essential notifications about jalwa game deposits, withdrawals, and account security</li>
+        <li><strong>Promotional Content:</strong> Information about bonuses, new jalwa games, and special offers (you may opt out)</li>
+        <li><strong>Service Updates:</strong> Important announcements about jalwa login procedures, policy changes, or platform updates</li>
+        <li><strong>Customer Support:</strong> Responses to your inquiries submitted through jalwa games support channels</li>
+      </ul>
+
+      <h3>Communication Preferences</h3>
+      <ul>
+        <li>Manage your communication preferences in account settings after jalwa game login</li>
+        <li>You may opt out of promotional emails while still receiving essential jalwa games notifications</li>
+        <li>SMS and push notifications can be configured based on your preferences</li>
+        <li>Critical security alerts related to jalwa login cannot be disabled for account protection</li>
+      </ul>
+    </section>
+
+    <!-- Modifications -->
+    <section class="content-section">
+      <h2>Modifications to Terms and Services</h2>
+
+      <p><strong>Jalwa Games</strong> reserves the right to modify these Terms and Conditions at any time to reflect changes in legal requirements, business practices, or platform features.</p>
+
+      <h3>How Changes Are Communicated</h3>
+      <ul>
+        <li><strong>Notification:</strong> Significant changes will be announced via email and prominent notices after jalwa game login</li>
+        <li><strong>Effective Date:</strong> Modified terms become effective 7 days after notification unless you terminate your jalwa games account</li>
+        <li><strong>Review Responsibility:</strong> You are responsible for regularly reviewing these terms to stay informed about jalwa game policies</li>
+        <li><strong>Continued Use:</strong> Accessing jalwa login after changes are posted constitutes acceptance of modified terms</li>
+      </ul>
+
+      <h3>Service Modifications</h3>
+      <ul>
+        <li>Jalwa games may add, remove, or modify features and game offerings at any time</li>
+        <li>We may adjust bonus structures, payment methods, or withdrawal limits with reasonable notice</li>
+        <li>Game rules and payout structures may be updated to improve jalwa game experience</li>
+        <li>Platform technical requirements may change to incorporate security improvements</li>
+      </ul>
+    </section>
+
+    <!-- Miscellaneous -->
+    <section class="content-section">
+      <h2>General Provisions</h2>
+
+      <h3>Severability</h3>
+      <p>If any provision of these <strong>jalwa games</strong> terms is found invalid or unenforceable, the remaining provisions shall continue in full force and effect. The invalid provision will be modified to achieve the intent to the extent possible under applicable law.</p>
+
+      <h3>Entire Agreement</h3>
+      <p>These Terms and Conditions, together with our Privacy Policy and any specific game rules, constitute the entire agreement between you and <strong>Jalwa Game</strong> regarding platform usage and <strong>jalwa login</strong> services.</p>
+
+      <h3>Waiver</h3>
+      <p>Failure by <strong>Jalwa Games</strong> to enforce any provision of these terms does not constitute a waiver of that provision or our right to enforce it in the future. No waiver is effective unless in writing.</p>
+
+      <h3>Assignment</h3>
+      <p>You may not transfer or assign your <strong>jalwa game</strong> account or any rights under these terms to another person. Jalwa Games may assign these terms to any successor entity or related company.</p>
+
+      <h3>Force Majeure</h3>
+      <p><strong>Jalwa Games</strong> is not liable for failure to perform obligations due to circumstances beyond our reasonable control, including natural disasters, government actions, internet failures, or other force majeure events affecting <strong>jalwa games login</strong> or services.</p>
+
+      <h3>Headings</h3>
+      <p>Section headings in these <strong>jalwa game</strong> terms are for convenience only and do not affect interpretation of the provisions.</p>
+    </section>
+
+    <!-- Contact -->
+    <section class="content-section">
+      <h2>Contact Information</h2>
+
+      <p>For questions, concerns, or clarifications regarding these Terms and Conditions or your <strong>Jalwa Games</strong> experience, please contact us:</p>
+
+      <div class="info-box">
+        <h4>Customer Support</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li>📧 <strong>Email:</strong> support@jalwagames.com</li>
+          <li>💬 <strong>Live Chat:</strong> Available 24/7 after jalwa game login</li>
+          <li>📱 <strong>Telegram:</strong> Official Jalwa Games support community</li>
+          <li>📞 <strong>Response Time:</strong> Within 24 hours for all inquiries</li>
+        </ul>
+      </div>
+
+      <p>Our dedicated support team is committed to ensuring your <strong>jalwa games</strong> experience is smooth, secure, and enjoyable. Don't hesitate to reach out with any concerns about your <strong>jalwa game login</strong>, gameplay, or account management.</p>
+    </section>
+
+    <!-- Acceptance -->
+    <section class="content-section">
+      <h2>Acknowledgment and Acceptance</h2>
+
+      <p>By clicking "Register," completing your <strong>jalwa game login</strong>, or using any <strong>Jalwa Games</strong> services, you acknowledge that:</p>
+
+      <ul>
+        <li>You have read and understood these Terms and Conditions in their entirety</li>
+        <li>You agree to be legally bound by all provisions outlined herein</li>
+        <li>You meet all eligibility requirements for jalwa games participation</li>
+        <li>You accept responsibility for all activities conducted through your jalwa game account</li>
+        <li>You understand the risks involved in online gaming and jalwa login activities</li>
+        <li>You commit to using jalwa games responsibly and within your financial means</li>
+      </ul>
+
+      <div class="highlight">
+        <strong>Thank You for Choosing Jalwa Game!</strong> We are committed to providing you with a secure, fair, and entertaining gaming experience. Please game responsibly and enjoy everything <strong>Jalwa Games</strong> has to offer. If you have any questions about these terms or your <strong>jalwa game login</strong>, our support team is always here to help.
+      </div>
+    </section>
+
+    <!-- Back to Home -->
+    <section class="back-home">
+      <a href="https://jalwagamee.netlify.app" class="btn btn-primary">Back to Jalwa Game Home</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <a href="https://jalwagamee.netlify.app">Home</a>
+        <a href="https://jalwagamee.netlify.app/privacy.html">Privacy Policy</a>
+        <a href="https://jalwagamee.netlify.app/terms.html">Terms & Conditions</a>
+        <a href="https://jalwagamee.netlify.app/responsible.html">Responsible Gaming</a>
+        <a href="https://jalwagamee.netlify.app/contact.html">Contact Us</a>
+      </div>
+      
+      <p class="footer-text">© 2024 Jalwa Game. All rights reserved. | Play responsibly. 18+ only.</p>
+      
+      <p class="footer-text" style="margin-top: 12px;">
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" style="color: var(--primary);">Jalwa Login</a> | 
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" style="color: var(--primary);">Jalwa Games Register</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
