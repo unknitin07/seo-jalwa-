@@ -40,14 +40,95 @@
 
     /* Header */
     header {
-      position: sticky;
-      top: 0;
-      background: rgba(10, 15, 28, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 12px 0;
-      border-bottom: 1px solid rgba(0, 231, 208, 0.2);
-      z-index: 100;
-    }
+    position: sticky;
+    top: 0;
+    background: rgba(10, 15, 28, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 231, 208, 0.2);
+    z-index: 100;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-btn {
+    background: rgba(0, 231, 208, 0.1);
+    border: 1px solid rgba(0, 231, 208, 0.3);
+    color: #00e7d0;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-btn:hover {
+    background: rgba(0, 231, 208, 0.2);
+    border-color: #00e7d0;
+    box-shadow: 0 0 15px rgba(0, 231, 208, 0.3);
+  }
+
+  .dropdown-btn::after {
+    content: '▼';
+    font-size: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown.active .dropdown-btn::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: rgba(10, 15, 28, 0.98);
+    border: 1px solid rgba(0, 231, 208, 0.3);
+    border-radius: 8px;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 231, 208, 0.1);
+  }
+
+  .dropdown.active .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-item {
+    display: block;
+    padding: 12px 16px;
+    color: #b0c4de;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(0, 231, 208, 0.1);
+  }
+
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown-item:hover {
+    background: rgba(0, 231, 208, 0.1);
+    color: #00e7d0;
+    padding-left: 20px;
+  }
+
+  .header-btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 
     .header-content {
       display: flex;
@@ -317,20 +398,42 @@
       color: var(--primary);
     }
   </style>
+  <script>
+  function toggleDropdown() {
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('active');
+  }
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(event) {
+    const dropdown = document.querySelector('.dropdown');
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove('active');
+    }
+  });
+  </script>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="container">
-      <div class="header-content">
-        <img src="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" alt="Jalwa Game Logo" class="logo">
-        <div class="header-btns">
-          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-outline btn-sm">Login</a>
-          <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-primary btn-sm">Register</a>
+  <div class="container">
+    <div class="header-content">
+      <img src="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" alt="Jalwa Game Logo" class="logo">
+      <div class="header-btns">
+        <div class="dropdown">
+          <button class="dropdown-btn" onclick="toggleDropdown()">Quick Links</button>
+          <div class="dropdown-menu">
+            <a href="https://jalwagamee.netlify.app/jalwagameslogin.html" class="dropdown-item">Jalwa Games Login</a>
+            <a href="https://jalwagamee.netlify.app/jalwalogin.html" class="dropdown-item">Jalwa Login</a>
+            <a href="https://jalwagamee.netlify.app/jalwagames.html" class="dropdown-item">Jalwa Games</a>
+          </div>
         </div>
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-outline btn-sm">Login</a>
+        <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-primary btn-sm">Register</a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Main Content -->
   <main class="container">
@@ -685,6 +788,7 @@
       
       <div class="disclaimer">
         <p>⚠️ <strong>Important Disclaimer:</strong> Players must be 18+ to participate. Jalwa Game is a gaming platform for entertainment purposes. Gaming involves risk and may not be suitable for everyone. Please play responsibly and within your means. Terms and conditions apply to all bonuses an
+
 
 
 
