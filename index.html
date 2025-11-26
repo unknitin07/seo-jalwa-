@@ -54,31 +54,6 @@
     display: inline-block;
   }
 
-  .dropdown-btn {
-    background: rgba(0, 231, 208, 0.1);
-    border: 1px solid rgba(0, 231, 208, 0.3);
-    color: #00e7d0;
-    padding: 8px 8px;
-    font-size: 14px;
-    border-radius: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.3s ease;
-  }
-
-  .dropdown-btn:hover {
-    background: rgba(0, 231, 208, 0.2);
-    border-color: #00e7d0;
-  }
-
-  .dropdown-btn::after {
-    content: '';
-    font-size: 10px;
-    transition: transform 0.3s ease;
-  }
-
   .dropdown.active .dropdown-btn::after {
     transform: rotate(180deg);
   }
@@ -417,6 +392,13 @@
   <div class="container">
     <div class="header-content">
       <img src="https://jalwaimg.jalwa-jalwa.com/Jalwa/other/h5setting_20250315141734j61m.png" alt="Jalwa Game Logo" class="logo">
+      <div class="dropdown">
+          <div class="dropdown-menu">
+            <a href="https://jalwagamee.netlify.app/jalwagameslogin.html" class="dropdown-item">Jalwa Games Login</a>
+            <a href="https://jalwagamee.netlify.app/jalwalogin.html" class="dropdown-item">Jalwa Login</a>
+            <a href="https://jalwagamee.netlify.app/jalwagames.html" class="dropdown-item">Jalwa Games</a>
+          </div>
+      </div>
       <div class="header-btns">
         <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-outline btn-sm">Login</a>
         <a href="https://jalwaclub3.com/#/register?invitationCode=46257833117" class="btn btn-primary btn-sm">Register</a>
@@ -778,6 +760,7 @@
       
       <div class="disclaimer">
         <p>⚠️ <strong>Important Disclaimer:</strong> Players must be 18+ to participate. Jalwa Game is a gaming platform for entertainment purposes. Gaming involves risk and may not be suitable for everyone. Please play responsibly and within your means. Terms and conditions apply to all bonuses an
+
 
 
 
